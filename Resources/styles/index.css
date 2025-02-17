@@ -276,7 +276,7 @@ body, html{
 /* contacts */
 .contacts{
     flex-wrap: wrap;
-    width: calc(100% / 3 - 10px);
+    width: 100%;
 }
 
 .contacts .contact-item{
