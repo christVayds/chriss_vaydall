@@ -43,6 +43,8 @@ body, html{
 
 .container{
     padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .container.full{
@@ -50,7 +52,6 @@ body, html{
 }
 
 .container.fit{
-    width: 100%;
     height: 100%;
 }
 
