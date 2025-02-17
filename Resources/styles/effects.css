@@ -1,0 +1,39 @@
+
+.img-grayscale{
+    filter: grayscale(1);
+    transition: filter 1s ease;
+}
+
+/* on hover */
+.project:hover img,
+.document-view:hover img,
+.user:hover .img-grayscale{
+    filter: grayscale(0);
+}
+
+/* hover on any a tag */
+a:hover:not(.contact-item){
+    color: var(---grey);
+    padding-left: 10px;
+}
+
+.contacts .contact-item:hover,
+.textcontainer p:hover{
+    color: var(---active);
+}
+
+.contacts .contact-item:hover p{
+    letter-spacing: 2px;
+}
+
+.content-info:hover img{
+    filter: grayscale(0);
+}
+
+.project:hover .project-about{
+    color: var(--dark);
+}
+
+.mobile-nav a:hover{
+    padding-right: 20px;
+}
