@@ -301,6 +301,7 @@ body, html{
     text-align: end;
     font-size: 2rem;
     display: none;
+    height: auto;
 }
 
 .mobile-nav{
@@ -324,6 +325,10 @@ body, html{
 }
 
 @media only screen and (max-width: 600px){
+
+    .side.content{
+        height: auto;
+    }
 
     .textcontainer p{
         width: 100%;
