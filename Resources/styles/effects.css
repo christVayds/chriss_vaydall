@@ -5,6 +5,7 @@
 }
 
 /* on hover */
+.mobile-nav:hover img,
 .project:hover img,
 .document-view:hover img,
 .user:hover .img-grayscale{

@@ -316,6 +316,13 @@ body, html{
     transition: padding-right .5s ease;
 }
 
+.mobile-nav img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    filter: grayscale(1);
+}
+
 @media only screen and (max-width: 600px){
 
     .textcontainer p{
