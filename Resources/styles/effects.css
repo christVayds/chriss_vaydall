@@ -38,3 +38,24 @@ a:hover:not(.contact-item){
 .mobile-nav a:hover{
     padding-right: 20px;
 }
+
+/* animations with js */
+.faded {
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.faded.visible{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.scale{
+    letter-spacing: 2px;
+    transition: letter-spacing 1s ease-in-out;
+}
+
+.scale.visible{
+    letter-spacing: normal;
+}

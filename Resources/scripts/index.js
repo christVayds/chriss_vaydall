@@ -1,4 +1,22 @@
 
+const observer = new IntersectionObserver(entries => {
+    entries.forEach((entry, index) => {
+        if(entry.isIntersecting){
+            entry.target.style.transitionDelay= `${index * 0.3}s`;
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+        }
+    });
+}, {threshold: 0.5});
+
+document.querySelectorAll('.faded').forEach(box => {
+    observer.observe(box);
+});
+
+document.querySelectorAll('.scale').forEach(box => {
+    observer.observe(box);
+});
+
 $(document).ready(function(){
     var open = false;
 

@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Resources/styles/index.css">
     <link rel="stylesheet" href="Resources/styles/effects.css">
+    <link rel="stylesheet" href="Resources/styles/animations.css">
     <link rel="icon" type="image/x-icon" href="Resources/assets/icon.ico">
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/9515269a08.js" crossorigin="anonymous"></script>
-    <script src="Resources/scripts/index.js"></script>
+    
     <title>chriss_vaydall</title>
 </head>
 <body>
@@ -27,50 +28,55 @@
                     <a href="#about">About</a>
                     <a href="#projects">Projects</a>
                     <a href="#skills">Skills and services</a>
+                    <a href="#blog">Blog</a>
                     <a href="#contacts">Contacts</a>
                 </nav>
             </div>
 
             <div class="side user testborder">
                 <div class="fullname testborder">
-                    <img class="img-grayscale" src="https://i.pinimg.com/736x/0e/bc/94/0ebc9461fa23f2f91e537163cf60f205.jpg" alt="chriss_vaydall">
-                    <p class="fname">Christian Vaydal</p>
-                    <p class="career">BS in Information Technology</p>
+                    <img class="img-grayscale slide" src="https://i.pinimg.com/736x/0e/bc/94/0ebc9461fa23f2f91e537163cf60f205.jpg" alt="chriss_vaydall">
+                    <p class="fname slide">Christian Vaydal</p>
+                    <p class="career slide">BS in Information Technology</p>
                 </div>
                 <nav class="navitems testborder">
-                    <a href="#about" class="nav">About</a>
-                    <a href="#projects" class="nav">Projects</a>
-                    <a href="#skills" class="nav">Skills and Services</a>
-                    <a href="#contacts" class="nav">Contacts</a>
+                    <a href="#about" class="nav slide">About</a>
+                    <a href="#projects" class="nav slide">Projects</a>
+                    <a href="#skills" class="nav slide">Skills and Services</a>
+                    <a href="#blog" class="nav slide">Blog</a>
+                    <a href="#contacts" class="nav slide">Contacts</a>
                 </nav>
-                <div class="theme">
+                <div class="theme slide">
                     <a href="#">Dark mode</a>
                 </div>
             </div>
             <div class="side content testborder" id="content-scroll">
+
                 <!-- About -->
                 <div class="content-item flexed center testborder-green" id="about">
                     <div class="greetings">
-                        <img class="logo" src="Resources/assets/supermanlogo.png" alt="chriss_vaydall-logo">
-                        <h1>Hello!</h1>
-                        <p>Let's create amazing things together!</p>
-                        <p class="changing-text">I'm <span id="services">a Web designer</span></p>
+                        <img class="logo slide-down" src="Resources/assets/supermanlogo.png" alt="chriss_vaydall-logo">
+                        <h1 class="fade">Hello!</h1>
+                        <p class="fade">Let's create amazing things together!</p>
+                        <p class="changing-text slide">I'm <span id="services">a Web designer</span></p>
                     </div>
                 </div>
+
                 <!-- paragraph about me -->
                 <div class="content-item testborder-green">
                     <div class="header flexed center sour-gummy"><h2>Hi there!</h2></div>
-                    <div class="textcontainer flexed columned center sour-gummy">
-                        <img src="Resources/assets/sunflower.png" alt="chriss_vaydall" class="logo">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptatem nostrum animi hic, dolore, corrupti dicta ut saepe nisi dolor tempora temporibus? Enim quisquam consequuntur modi aliquam voluptates voluptatum alias?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ducimus distinctio rerum, laudantium quis cupiditate nesciunt non dolorem, quidem odit ullam harum obcaecati enim reprehenderit, ab magnam reiciendis dolor ratione.</p>
+                    <div class="textcontainer flexed columned center sour-gummy faded">
+                        <img src="Resources/assets/sunflower.png" alt="chriss_vaydall" class="faded logo">
+                        <p class="faded">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptatem nostrum animi hic, dolore, corrupti dicta ut saepe nisi dolor tempora temporibus? Enim quisquam consequuntur modi aliquam voluptates voluptatum alias?</p>
+                        <p class="faded">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ducimus distinctio rerum, laudantium quis cupiditate nesciunt non dolorem, quidem odit ullam harum obcaecati enim reprehenderit, ab magnam reiciendis dolor ratione.</p>
                     </div>
                 </div>
 
                 <!-- Education -->
                 <div class="content-item testborder-green">
                     <div class="header flexed center"><h2>Educations</h2></div>
-                    <div class="content-info flexed drop">
+                    
+                    <div class="content-info flexed drop faded">
                         <img src="https://i.pinimg.com/736x/64/74/21/647421fbba7604eb3fc452dce2204ac7.jpg" alt="">
                         <div class="body">
                             <h3>St. Bernadette College of Alabang</h3>
@@ -79,7 +85,7 @@
                             <p class="year">2022-2025</p>
                         </div>
                     </div>
-                    <div class="content-info flexed drop">
+                    <div class="content-info flexed drop faded">
                         <img src="https://i.pinimg.com/736x/2e/89/2a/2e892ad52955f2cd71f7cf014c50c619.jpg" alt="">
                         <div class="body">
                             <h3>Arellano University - Jose Abad Santos</h3>
@@ -88,7 +94,7 @@
                             <p class="year">2018-2020</p>
                         </div>
                     </div>
-                    <div class="content-info flexed drop">
+                    <div class="content-info flexed drop faded">
                         <img src="https://i.pinimg.com/736x/cb/49/29/cb49299a570bfb3a6d36b7ae393c2a86.jpg" alt="">
                         <div class="body">
                             <h3>Linao National HighSchool</h3>
@@ -104,22 +110,22 @@
                     <div class="header flexed center"><h2>Certificates</h2></div>
                     
                     <div class="documents flexed">
-                        <div class="document-view testborder-grey flexed center">
+                        <div class="document-view testborder-grey flexed center faded">
                             <img src="https://i.pinimg.com/736x/80/96/6e/80966e80f7244f8dcb7c1811ac03c478.jpg" alt="chriss_vaydall">
                         </div>
-                        <div class="document-view testborder-grey flexed center">
+                        <div class="document-view testborder-grey flexed center faded">
                             <img src="https://i.pinimg.com/736x/ca/97/ff/ca97ff25387ba8bb2af71422faf0e024.jpg" alt="chriss_vaydall">
                         </div>
-                        <div class="document-view testborder-grey flexed center">
+                        <div class="document-view testborder-grey flexed center faded">
                             <img src="https://i.pinimg.com/736x/41/61/77/416177d54022bc3b99f71de382ccacd8.jpg" alt="chriss_vaydall">
                         </div>
-                        <div class="document-view testborder-grey flexed center">
+                        <div class="document-view testborder-grey flexed center faded">
                             <img src="https://i.pinimg.com/736x/c1/ab/82/c1ab8226223b88f8047358a70d07275e.jpg" alt="chriss_vaydall">
                         </div>
-                        <div class="document-view testborder-grey flexed center">
+                        <div class="document-view testborder-grey flexed center faded">
                             <img src="https://i.pinimg.com/736x/61/24/e0/6124e0f3cb515af833ae53162c2fcfda.jpg" alt="chriss_vaydall">
                         </div>
-                        <div class="document-view testborder-grey flexed center">
+                        <div class="document-view testborder-grey flexed center faded">
                             <img src="https://i.pinimg.com/736x/d4/6a/11/d46a11d9afbeab5192e338a4a9a98e2e.jpg" alt="chriss_vaydall">
                         </div>
                     </div>
@@ -131,7 +137,7 @@
                     
                     <div class="documents flexed center">
 
-                        <div class="project">
+                        <div class="project faded">
                             <img src="Resources/assets/sbcaportal.png" alt="chriss_vaydall">
                             <div class="project-info flexed">
                                 <div class="number">
@@ -147,7 +153,7 @@
                             </div>
                         </div>
 
-                        <div class="project">
+                        <div class="project faded">
                             <img src="https://i.pinimg.com/736x/ac/4a/0e/ac4a0ea3d1691ee48f7b7680e829dd5d.jpg" alt="chriss_vaydall">
                             <div class="project-info flexed">
                                 <div class="number">
@@ -163,7 +169,7 @@
                             </div>
                         </div>
 
-                        <div class="project">
+                        <div class="project faded">
                             <img src="https://i.pinimg.com/736x/63/85/88/638588304085de9bd15f6fbe5a25c070.jpg" alt="chriss_vaydall">
                             <div class="project-info flexed">
                                 <div class="number">
@@ -179,7 +185,7 @@
                             </div>
                         </div>
 
-                        <div class="project">
+                        <div class="project faded">
                             <img src="https://i.pinimg.com/736x/fe/93/59/fe93592046eb672195a8010451fcdf58.jpg" alt="chriss_vaydall">
                             <div class="project-info flexed">
                                 <div class="number">
@@ -203,42 +209,49 @@
                     
                 </div>
 
+                <!-- blog -->
+                <div class="content-item testborder-green" id="blog">
+                    <div class="header flexed center"><h2>Blog posts</h2></div>
+                    
+                </div>
+
                 <!-- contacts -->
                 <div class="content-item testborder-green" id="contacts">
                     <div class="header flexed center"><h2>Get in touch</h2></div>
                     
                     <div class="flexed center testborder-green">
                         <div class="contacts flexed center columned">
-                            <div class="contact-item testborder-green flexed center columned withval">
+
+                            <div class="contact-item testborder-green flexed center columned withval scale">
                                 <i class="fa-regular fa-envelope icons"></i>
                                 <p>Email</p>
                                 <p class="value">christianvaydal112@gmail.com</p>
                             </div>
     
-                            <div class="contact-item testborder-green flexed center columned withval">
+                            <div class="contact-item testborder-green flexed center columned withval scale">
                                 <i class="fa-solid fa-phone icons"></i>
                                 <p>Phone</p>
                                 <p class="value">+63 960 512 5845</p>
                             </div>
     
-                            <a href="#" class="contact-item testborder-green flexed center columned">
+                            <a href="#" class="contact-item testborder-green flexed center columned scale">
                                 <i class="fa-solid fa-globe icons"></i>
                                 <p>Christian Vaydal</p>
                                 <p class="value">https://www.christianvaydal.com</p>
                             </a>
     
                             <div class="flexed center">
-                                <a href="#" class="contact-item testborder-green flexed center columned">
+                                <a href="#" class="contact-item testborder-green flexed center columned scale">
                                     <i class="fa-brands fa-instagram icons"></i>
                                     <p>Instagram</p>
                                 </a>
         
-                                <a href="#" class="contact-item testborder-green flexed center columned">
+                                <a href="#" class="contact-item testborder-green flexed center columned scale">
                                     <i class="fa-brands fa-x-twitter icons"></i>
                                     <p>X / Twitter</p>
                                 </a>
         
-                                <a href="#" class="contact-item testborder-green flexed center columned">
+                                <a href="#" class="contact-item testborder-green flexed center columned scale">
                                     <i class="fa-brands fa-threads icons"></i>
                                     <p>Threads</p>
                                 </a>
@@ -249,5 +262,7 @@
             </div>
         </div>
     </div>
+
+    <script src="Resources/scripts/index.js"></script>
 </body>
 </html>
