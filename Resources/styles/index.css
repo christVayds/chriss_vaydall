@@ -39,6 +39,7 @@ body, html{
     background-color: var(---white);
     font-family: "Liter", serif;
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 .container{
