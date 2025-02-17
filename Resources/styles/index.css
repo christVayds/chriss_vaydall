@@ -126,11 +126,11 @@ body, html{
     object-fit: cover;
 }
 
-.side .fullname .fname{
+.fullname .fname{
     font-size: 2rem;
 }
 
-.side .fullname .career{
+.fullname .career{
     color: var(---active);
 }
 
@@ -155,12 +155,19 @@ body, html{
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
+    scroll-padding-top: 1px;
 }
 
 .side.content .content-item{
     height: 100%;
     overflow-y: auto;
     scroll-snap-align: start;
+}
+
+.changing-text{
+    font-size: 1.2rem;
+    color: var(---active);
+    letter-spacing: 1px;
 }
 
 .greetings{
