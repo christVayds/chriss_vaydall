@@ -19,9 +19,9 @@ document.querySelectorAll('.scale').forEach(box => {
 
 if("serviceWorker" in navigator){
     console.log('serviceWorker' in navigator);
-    navigator.serviceWorker.register('/service-workers.js')
+    navigator.serviceWorker.register('/Resources/scripts/service-workers.js')
     .then(() => console.log('Service worker registered'))
-    .catch((err) => console.log('service worker failed'))
+    .catch((err) => console.log('service worker failed', err))
 }
 
 $(document).ready(function(){
