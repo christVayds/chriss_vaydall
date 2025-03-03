@@ -2,7 +2,7 @@
     "id": "/index.html",
     "name": "chriss_vaydall",
     "short_name": "vaydal",
-    "start_url": "/",
+    "start_url": "/index.html",
     "display": "standalone",
     "background_color": "#e4e4e4",
     "theme_color": "#161616",
