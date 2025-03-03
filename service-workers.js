@@ -1,15 +1,15 @@
 
 const assets = [
-    '/', 
-    '/index.html', 
-    '/Resources/styles/index.css',
-    '/Resources/styles/animation.css',
-    '/Resources/styles/effects.css',
-    '/Resources/scripts/index.js',
-    '/Resources/assets/icon.ico',
-    '/Resources/assets/sunflower.png',
-    '/Resources/assets/supermanlogo.png',
-    '/Resources/assets/sbcaportal.png',
+    './', 
+    './index.html', 
+    './Resources/styles/index.css',
+    './Resources/styles/animation.css',
+    './Resources/styles/effects.css',
+    './Resources/scripts/index.js',
+    './Resources/assets/icon.ico',
+    './Resources/assets/sunflower.png',
+    './Resources/assets/supermanlogo.png',
+    './Resources/assets/sbcaportal.png',
 ];
 
 self.addEventListener("install", (event) => {
