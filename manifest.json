@@ -1,0 +1,21 @@
+{
+    "id": "/index.html",
+    "name": "chriss_vaydall",
+    "short_name": "vaydal",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#e4e4e4",
+    "theme_color": "#161616",
+    "icons": [
+        {
+            "src": "Resources/assets/icon.ico",
+            "sizes": "32x32",
+            "type": "image/ico"
+        },
+        {
+            "src": "Resources/assets/supermanlogo.png",
+            "sizes": "474x474",
+            "type": "image/png"
+        }
+    ]
+}

@@ -17,13 +17,6 @@ document.querySelectorAll('.scale').forEach(box => {
     observer.observe(box);
 });
 
-if("serviceWorker" in navigator){
-    console.log('serviceWorker' in navigator);
-    navigator.serviceWorker.register('service-workers.js')
-    .then(() => console.log('Service worker registered'))
-    .catch((err) => console.log('service worker failed', err))
-}
-
 $(document).ready(function(){
     var open = false;
 
@@ -43,5 +36,33 @@ $(document).ready(function(){
         this.classList.remove('show');
         open = false;
         document.getElementById('open-mobile-nav').textContent = 'Menu';
+    });
+});
+
+if("serviceWorker" in navigator){
+    console.log('serviceWorker' in navigator);
+    navigator.serviceWorker.register('/service-workers.js')
+    .then(() => console.log('Service worker registered'))
+    .catch((err) => console.log('service worker failed', err))
+}
+
+let deferredPrompt;
+
+window.addEventListener("beforeinstallprompt", event =>{
+    event.preventDefault();
+    deferredPrompt = event;
+
+    const installButton = document.createElement('button');
+    installButton.textContent = 'Install App';
+    document.body.appendChild(installButton);
+
+    installButton.addEventListener('click', () => {
+        deferredPrompt.prompt();
+        deferredPrompt.userChoice.then(choice => {
+            if(choice.outcome === 'accepted'){
+                console.log("user installed the pwa");
+            }
+            deferredPrompt = null;
+        });
     });
 });
