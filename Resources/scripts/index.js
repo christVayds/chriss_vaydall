@@ -52,9 +52,13 @@ window.addEventListener("beforeinstallprompt", event =>{
     event.preventDefault();
     deferredPrompt = event;
 
-    const installButton = document.createElement('button');
-    installButton.textContent = 'Install App';
-    document.body.appendChild(installButton);
+    // const additionalAction = document.getElementById('additional-actions');
+    // const installButton = document.createElement('button');
+    // installButton.textContent = 'Install App';
+    // installButton.classList = 'install';
+
+    const installButton = document.getElementById('install');
+    installButton.style.display = 'block';
 
     installButton.addEventListener('click', () => {
         deferredPrompt.prompt();

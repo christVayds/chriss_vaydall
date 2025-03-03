@@ -147,6 +147,18 @@ body, html{
 
 .side .theme{
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.side .theme button{
+    text-align: left;
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    color: var(---dark);
+    font-family: "Liter", serif;
+    display: none;
 }
 
 /* content side */
